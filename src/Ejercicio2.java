@@ -1,31 +1,6 @@
 import java.util.Scanner;
 
 public class Ejercicio2 {
-    /*
-     * 
-     * ## Ejercicio 2 (35 pts)
-     ** 
-     ** 
-     * 
-     * Ejemplo:**
-     * 
-     * ```
-     * Entrada:
-     * 4.8, 4.2, 5.0
-     * Salida:
-     * Promedio: 4.67
-     * Estado: Promocionado
-     * ```
-     ** 
-     * Sugerencia de formato (opcional):**
-     * 
-     * ```java
-     * System.out.printf("Promedio: %.2f%n", promedio);
-     * ```
-     * 
-     * ---
-     * 
-     */
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -62,14 +37,14 @@ public class Ejercicio2 {
          * `Reprobado` si **promedio < 4.0**
          */
         if (promedio >= Promocionado) {
-            System.out.println("Promocionado");
+            System.out.printf("Promocionado: %.2f%n", promedio);
         }
         if (promedio > Reprobado && promedio <= Regular) {
-            System.out.println("Regular");
+            System.out.printf("Regular: %.2f%n", promedio);
+
         }
         if (promedio < Reprobado) {
-            System.out.println("Reprobado");
-
+            System.out.printf("Reprobado: %.2f%n", promedio);
         }
         sc.close();
 
