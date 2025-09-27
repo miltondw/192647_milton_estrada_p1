@@ -23,7 +23,8 @@ public class Ejercicio1 {
         if (numberA > numberB) {
             System.out.println("Suma: " + (numberA + numberB));
             System.out.println("Diferencia: " + (numberA - numberB));
-        } else if (numberA <= numberB) {
+        }
+        if (numberA <= numberB) {
             System.out.println("Producto: " + (numberA * numberB));
             if (numberB == 0) {
                 System.out.println("Division no definida (b es 0)");
